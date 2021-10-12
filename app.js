@@ -41,9 +41,6 @@ mongoose
   .then(db => console.log('Base de datos conectada'))
   .catch(err => console.error(err)); 
 
-
-
-
 app.use(cors());
 
 // API
