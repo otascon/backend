@@ -20,7 +20,6 @@ let express = require("express"),
   const password='123asistencias';
   const dataB='DatabaseProyect'; */
 
-  //const uri=`mongodb+srv://${user}:${password}@cluster0.y3w80.mongodb.net/${dataB}?retryWrites=true&w=majority`;
 const uri=`mongodb+srv://ProyAsis:123Asis@cluster0.gas8g.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 // Connect mongoDB
 /*mongoose.Promise = global.Promise;
@@ -37,6 +36,7 @@ mongoose
       console.log("Database could't be connected to: " + error);
     }
   );*/
+  
   mongoose.connect(uri,{useNewUrlParser:true, useUnifiedTopology: true})
   .then(db => console.log('Base de datos conectada'))
   .catch(err => console.error(err)); 

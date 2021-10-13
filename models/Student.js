@@ -12,6 +12,9 @@ let studentSchema = new Schema(
     phone: {
       type: Number,
     },
+    asistance: {
+      type: Number,
+    },
   },
   {
     collection: "students",
